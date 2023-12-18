@@ -42,8 +42,11 @@ Diff = A ⊕ B ⊕ Bin B = A'Bin + A'B + BBin
 ## B. Full Subractor:
 
 1.A full subtractor is a combinational circuit that subtracts three single-bit inputs: A, B, and a Borrow-In (Bin), and produces two outputs: the difference and a Borrow-Out (Bout) to the next subtractor in a sequence.
+
 2.Difference (Diff): This output represents the result of the subtraction A - B - Bin.
+
 3.Borrow-Out (Bout): This output indicates whether a borrow is required for the subtraction and will be used in further subtractors.
+
 4.A full subtractor is typically constructed using two half subtractors. The Borrow-Out of the first half subtractor is used as an input Borrow-In for the second half subtractor. The outputs of the half subtractors are combined to generate the final Difference and Borrow-Out.
 
 ## Program:
