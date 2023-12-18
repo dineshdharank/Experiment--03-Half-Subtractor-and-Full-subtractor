@@ -29,54 +29,66 @@ Diff = A ⊕ B ⊕ Bin B = A'Bin + A'B + BBin
 
 ## Procedure
 
+## A. Half Subractor:
 
+1.A half subtractor is a combinational circuit that performs the subtraction of two single-bit numbers and produces two outputs: the difference and the borrow.
+2.Let's consider two single-bit inputs A and B.
+3.Difference (Diff): This output represents the result of the subtraction A - B and is obtained by performing an XOR operation on inputs A and B.
+4.Borrow (Borrow): This output indicates whether a borrow is required for the subtraction and is obtained by performing an AND operation between the complement of A and B.
 
-Write the detailed procedure here 
+## B. Full Subractor:
 
+1.A full subtractor is a combinational circuit that subtracts three single-bit inputs: A, B, and a Borrow-In (Bin), and produces two outputs: the difference and a Borrow-Out (Bout) to the next subtractor in a sequence.
+2.Difference (Diff): This output represents the result of the subtraction A - B - Bin.
+3.Borrow-Out (Bout): This output indicates whether a borrow is required for the subtraction and will be used in further subtractors.
+4.A full subtractor is typically constructed using two half subtractors. The Borrow-Out of the first half subtractor is used as an input Borrow-In for the second half subtractor. The outputs of the half subtractors are combined to generate the final Difference and Borrow-Out.
 
 ## Program:
 
 Half Subractor:
 
-![Screenshot 2023-12-15 220633](https://github.com/dineshdharank/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145980096/93e2f681-fff4-423c-b007-f4748e546aa8)
+![Screenshot 2023-12-18 141908](https://github.com/dineshdharank/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145980096/805950de-afd0-426a-9723-3c0b3ffe4c73)
+
 
 Full Subractor:
 
-![Screenshot 2023-12-15 220026](https://github.com/dineshdharank/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145980096/ef13056d-5245-4835-a929-27b30ac96649)
+![Screenshot 2023-12-18 141953](https://github.com/dineshdharank/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145980096/6afd5d50-b2b4-43a4-99df-5b561ad087e9)
 
 
 ## Truthtable:
 
 Half Subractor:
 
-![Screenshot 2023-12-15 213240](https://github.com/dineshdharank/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145980096/bd239acf-fa79-4073-aa77-e089a9d98a60)
+![Screenshot 2023-12-18 142046](https://github.com/dineshdharank/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145980096/c513ccf7-cb79-456e-a071-42fc2098a622)
+
 
 Full Subractor:
 
-![Screenshot 2023-12-15 213300](https://github.com/dineshdharank/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145980096/ffb0dd52-cd48-4c8c-b2c3-552987cadbc9)
+![Screenshot 2023-12-18 142059](https://github.com/dineshdharank/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145980096/d4c52860-aad2-48b4-ac9c-2cefa5d9bc89)
 
 
 ##  RTL realization
 
 Half Subractor:
 
-![Screenshot 2023-12-15 215014](https://github.com/dineshdharank/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145980096/bc4c3a0e-b31f-43a2-aa08-ca1873b1e56d)
+![Screenshot 2023-12-18 142012](https://github.com/dineshdharank/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145980096/59c08d4c-16c2-4b59-8732-798732c04609)
+
 
 Full Subractor:
 
-![Screenshot 2023-12-15 184123](https://github.com/dineshdharank/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145980096/9470c803-3f52-4ff3-9b9b-add9ad2287bb)
+![Screenshot 2023-12-18 142029](https://github.com/dineshdharank/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145980096/ef5a2766-963e-4544-9036-5bd8100c1e51)
+
 
 
 ## Timing diagram
 
 Half Subractor:
 
-![Screenshot 2023-12-15 213343](https://github.com/dineshdharank/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145980096/701afdd9-d349-4352-9ad1-b07a8fa87357)
+![Screenshot 2023-12-18 142112](https://github.com/dineshdharank/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145980096/f736aa19-d258-4d0e-8942-2ecd441d7ac4)
 
 Full Subractor:
 
-![Screenshot 2023-12-15 213410](https://github.com/dineshdharank/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145980096/b3881f57-5592-4d5c-a7fc-d878eca9e796)
-
+![Screenshot 2023-12-18 142143](https://github.com/dineshdharank/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/145980096/12bd51db-11db-4fdd-bd31-272787f35678)
 
 
 ## Result:
