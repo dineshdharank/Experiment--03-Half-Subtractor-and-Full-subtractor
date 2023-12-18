@@ -32,8 +32,11 @@ Diff = A ⊕ B ⊕ Bin B = A'Bin + A'B + BBin
 ## A. Half Subractor:
 
 1.A half subtractor is a combinational circuit that performs the subtraction of two single-bit numbers and produces two outputs: the difference and the borrow.
+
 2.Let's consider two single-bit inputs A and B.
+
 3.Difference (Diff): This output represents the result of the subtraction A - B and is obtained by performing an XOR operation on inputs A and B.
+
 4.Borrow (Borrow): This output indicates whether a borrow is required for the subtraction and is obtained by performing an AND operation between the complement of A and B.
 
 ## B. Full Subractor:
